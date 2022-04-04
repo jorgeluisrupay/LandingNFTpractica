@@ -40,7 +40,7 @@ const Button = ({text="", enlace="https://github.com"}) => {
 
   return (
     <Btn>
-        <a href={enlace} aria-label={text} target='_blank' rel='noreferrer'>
+        <a href={enlace} aria-label={text} target="_blank"  rel="noopener">
             {text}
         </a>
     </Btn>

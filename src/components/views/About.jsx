@@ -69,11 +69,10 @@ const ButtonContainer = styled.div`
 
 const About = () => {
   return (
-    <Section>
+    <Section id="about">
       <Container>
         <Box>
-          {" "}
-          <Carrousel />{" "}
+          <Carrousel />
         </Box>
         <Box>
           <Title>Welcome To the Weirdos Club</Title>

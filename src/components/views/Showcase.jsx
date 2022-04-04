@@ -17,6 +17,7 @@ import ETH from '../../assets/Ethereum.svg'
 const Section = styled.section`
   min-height: 100vh;
   width: 100vw;
+  /* height: 100vh; */
   background-color: ${(props) => props.theme.text};
   display: flex;
   flex-direction: column;
@@ -133,7 +134,7 @@ const Showcase = () => {
   const Row2Ref = useRef(null);
 
   return (
-    <Section>
+    <Section id="showcase">
       <Row direction="none" ref={Row1Ref}>
         <NFTItem img={img1} number={654} price={1} passRef={Row1Ref} />
         <NFTItem img={img2} number={124} price={1.5} passRef={Row1Ref} />

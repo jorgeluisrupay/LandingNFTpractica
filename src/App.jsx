@@ -10,6 +10,7 @@ import Showcase from './components/views/Showcase'
 import Team from './components/views/Team'
 import Faq from './components/views/Faq'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
 
 export const App = () => {
   return (
@@ -24,7 +25,10 @@ export const App = () => {
           <Team />
           <Faq />
           <Footer />
+          <ScrollToTop />
         </ThemeProvider>
     </>
   )
 }
+
+//4:01:42

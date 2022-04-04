@@ -42,17 +42,28 @@ const MenuItem = styled.li`
 `
 
 const Navigation = () => {
+
+  const scrollTop = (id) => {
+    let element = document.getElementById(id);
+
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest'
+    })
+  }
+
   return (
-    <Section>
+    <Section id="navigation">
       <NavBar>
         <Logo />
         <Menu>
-          <MenuItem>Home</MenuItem>
-          <MenuItem>About</MenuItem>
-          <MenuItem>RoadMap</MenuItem>
-          <MenuItem>Showcase</MenuItem>
-          <MenuItem>Team</MenuItem>
-          <MenuItem>Faq</MenuItem>
+          <MenuItem onClick={()=> scrollTop('home')} >Home</MenuItem>
+          <MenuItem onClick={()=> scrollTop('about')} >About</MenuItem>
+          <MenuItem onClick={()=> scrollTop('roadmap')} >RoadMap</MenuItem>
+          <MenuItem onClick={()=> scrollTop('showcase')} >Showcase</MenuItem>
+          <MenuItem onClick={()=> scrollTop('team')} >Team</MenuItem>
+          <MenuItem onClick={()=> scrollTop('faq')} >Faq</MenuItem>
         </Menu>
         <Button text="Connect Wallet" enlace="https://styled-components.com/docs/basics" />
       </NavBar>
