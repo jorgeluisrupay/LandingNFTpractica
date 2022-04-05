@@ -23,6 +23,21 @@ const Title = styled.h2`
   .text-3 {
     color: red;
   }
+
+  @media (max-width: 70em) {
+    /* 1120px */
+    font-size: ${(props) => props.theme.fontxl};
+  }
+  @media (max-width: 48em) {
+    /* 768px */
+    align-self: center;
+    text-align: center;
+  }
+  @media (max-width:40em) {
+    /* 640px */
+    width: 90%;
+  }
+  
 `;
 
 const SubTitle = styled.h3`
@@ -33,11 +48,32 @@ const SubTitle = styled.h3`
   margin-bottom: 1rem;
   width: 80%;
   align-self: flex-start;
+
+  @media (max-width: 40em) {
+    /* 640px */
+    font-size: ${(props) => props.theme.fontmd};
+  }
+  @media (max-width: 48em) {
+    /* 768px */
+    align-self: center;
+    text-align: center;
+  }
 `;
 
 const ButtonContainer = styled.div`
     width: 80%;
-    align-self: flex-start;`
+    align-self: flex-start;
+    
+    @media (max-width: 48em) {
+    /* 768px */
+    align-self: center;
+    text-align: center;
+    button{
+      margin: 0 auto;
+    }
+  }
+
+    `
 
 const TypeWriteText = () => {
   return (
